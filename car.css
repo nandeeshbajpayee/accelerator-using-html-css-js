@@ -1,0 +1,134 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+.box{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#horn{
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    padding: auto;
+    background: linear-gradient(to top,rgb(255, 0, 0),rgb(242, 166, 166)) ;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 7px 10px 0px grey;
+    transition: 0.15s;
+}
+#horn:active{
+    transform-origin: bottom ;
+    transform: rotateX(0,45deg);
+    box-shadow: 0px 3px 5px 0px rgb(44, 44, 44);
+}
+#acccelator{
+    width: 40px;
+    height: 70px;
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    padding: auto;
+    background: linear-gradient(to top,rgb(72, 72, 72),rgb(193, 192, 192)) ;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 7px 10px 0px grey;
+    transition: 0.75s;
+}
+#acccelator:active{
+    transform-origin: bottom ;
+    transform: rotateX(45deg);
+    box-shadow: 0px 3px 5px 0px rgb(44, 44, 44);
+}
+#break{
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    right: 60px;
+    bottom: 15px;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    padding: auto;
+    background: linear-gradient(to top,rgb(72, 72, 72),rgb(193, 192, 192)) ;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 7px 10px 0px grey;
+    transition: 0.25s;
+}
+#break:active{
+    transform-origin: bottom ;
+    transform: rotateX(30deg);
+    box-shadow: 0px 3px 5px 0px rgb(44, 44, 44);
+}
+#speedometer{
+    width: 250px;
+    height: 250px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px grey;
+    background-image: url("speedometer.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#speedometer #needle{
+    width: 3px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #89ff00;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 1;
+    transform-origin: bottom ;
+    transform: rotate(-135deg) ;
+    transition: 2s;
+}
+#speedometer #point{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #89ff00;
+    bottom: -10px;
+    left: -10px;
+    transition:2s;
+    animation:0s vibrate1 linear infinite;
+}
+#logo{
+    position: absolute;
+    border: 1px solid white;
+    bottom: 65px;
+    left: 100px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #4f7a36;
+}
+@keyframes vibrate1{
+    from{
+        left: -9.5px;
+    }
+    to{
+        left: -10.5px
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car accelerartion</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+<div  class="box">
+    <audio id="carsound" src="car-engine.mp3" type="audio" loop></audio>
+    <audio id="caraccelator" src="car-sound.mp3" type="audio" loop></audio>
+    <audio id="carhorn" src="car-horn.mp3" type="audio" loop></audio>
+    <audio id="carbreak" src="car-break.mp3" type="audio"></audio>
+    <button id="acccelator" onmousedown="Caraccelerator()" onmouseup="Cardeaccelerate()">|||</button>
+    <button id="break" onmousedown="Carbreak()" onmouseup="Cardebreak()">|||</button>
+    <button id="horn" onmousedown="Carhorn()" onmouseup="Cardehorn()">P</button>
+    <div id="speedometer">
+        <div id="needle">
+             <div id="point"></div>
+        </div>
+    </div>
+</div>
+<script src="car.js"></script>
+</body>
+</html>
